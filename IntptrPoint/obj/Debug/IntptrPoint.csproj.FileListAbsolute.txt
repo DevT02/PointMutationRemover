@@ -1,0 +1,10 @@
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\obj\Debug\IntptrPoint.csprojAssemblyReference.cache
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\obj\Debug\IntptrPoint.csproj.CoreCompileInputs.cache
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\bin\Debug\IntptrPoint.exe.config
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\bin\Debug\IntptrPoint.exe
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\bin\Debug\IntptrPoint.pdb
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\bin\Debug\de4dot.blocks.dll
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\bin\Debug\dnlib.dll
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\obj\Debug\IntptrPoint.csproj.CopyComplete
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\obj\Debug\IntptrPoint.exe
+C:\Users\devli\source\repos\IntptrPoint\IntptrPoint\obj\Debug\IntptrPoint.pdb
