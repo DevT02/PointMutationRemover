@@ -13,3 +13,6 @@ Console.WriteLine(test);
 int test = 123;
 Console.WriteLine(test);
 ```
+
+# WARNINGS
+You might have to re-drag the file into the fixer until it becomes 0. I'm still working on a fix for this.
