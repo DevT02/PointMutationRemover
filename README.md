@@ -16,3 +16,6 @@ Console.WriteLine(test);
 
 # WARNINGS
 You might have to re-drag the file into the fixer until it becomes 0. I'm still working on a fix for this.
+
+# Help?
+You could always open an issue and i will happily look into it. Or you could DM me (check my github homepage)
