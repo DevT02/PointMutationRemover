@@ -24,8 +24,6 @@ namespace IntptrPoint
                     {
                         for (int i = 0; i < method.Body.Instructions.Count; i++)
                         {
-
-                            int AHHAHA = i;
                             bool x = false;
                             bool y = false;
                             if (method.Body.Instructions[i].OpCode != OpCodes.Newobj) continue;
@@ -45,7 +43,6 @@ namespace IntptrPoint
                         }
                         for (int i = 0; i < method.Body.Instructions.Count; i++)
                         {
-                            int AHHAHA = i;
                             bool x = false;
                             bool y = false;
                             if (method.Body.Instructions[i].OpCode != OpCodes.Newobj) continue;
@@ -65,7 +62,6 @@ namespace IntptrPoint
                         }
                         for (int i = 0; i < method.Body.Instructions.Count; i++)
                         {
-                            int AHHAHA = i;
                             bool x = false;
                             bool y = false;
                             if (method.Body.Instructions[i].OpCode != OpCodes.Newobj) continue;
@@ -101,7 +97,6 @@ namespace IntptrPoint
                         }
                         for (int i = 0; i < method.Body.Instructions.Count; i++)
                         {
-                            int AHHAHA = i;
                             bool x = false;
                             bool y = false;
                             if (method.Body.Instructions[i].OpCode != OpCodes.Newobj) continue;
@@ -122,8 +117,8 @@ namespace IntptrPoint
                                 Console.WriteLine("GotY");
                                 y = true;
                             }
-                            var valY = 0;
-                            var valX = 0;
+                            //var valY = 0;
+                            //var valX = 0;
                             //try
                             //{
                             //    valY = method.Body.Instructions[i - 1].GetLdcI4Value();
@@ -133,10 +128,10 @@ namespace IntptrPoint
                             //{
                             //    continue;
                             //}
-                            int finalvalue = 0;
+                            //int finalvalue = 0;
                             if (y)
                             {
-                                finalvalue = valY;
+                                //finalvalue = valY;
                                 method.Body.Instructions.RemoveAt(i);
                                 method.Body.Instructions.RemoveAt(i);
                                 method.Body.Instructions.RemoveAt(i);
@@ -146,7 +141,7 @@ namespace IntptrPoint
                             }
                             if (x)
                             {
-                                finalvalue = valX;
+                                //finalvalue = valX;
                                 method.Body.Instructions.RemoveAt(i);
                                 method.Body.Instructions.RemoveAt(i);
                                 method.Body.Instructions.RemoveAt(i);
@@ -158,8 +153,8 @@ namespace IntptrPoint
                         }
                         for (int i = 0; i < method.Body.Instructions.Count; i++)
                         {
-                            int AHHAHA = i;
-                            int AHHAHA2 = i;
+                            //int AHHAHA = i;
+                            //int AHHAHA2 = i;
                             bool x = false;
                             bool y = false;
 
