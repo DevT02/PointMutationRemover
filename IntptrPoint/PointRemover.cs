@@ -22,17 +22,19 @@ namespace IntptrPoint
                     int w = 0;
                     while (w < method.Body.Instructions.Count)
                     {
-                        for (int i = 0; i < method.Body.Instructions.Count; i++)
+                        IList<Instruction> instr = method.Body.Instructions;
+                        for (int i = 0; i < instr.Count; i++)
                         {
                             bool x = false;
                             bool y = false;
-
-                            if (method.Body.Instructions[i].OpCode != OpCodes.Newobj) continue;
-                            if (!method.Body.Instructions[i].Operand.ToString().Contains("Point::.ctor")) continue;
-                            if (method.Body.Instructions[i + 3].OpCode != OpCodes.Call) continue;
-                            if (!method.Body.Instructions[i + 3].Operand.ToString().Contains("::get_")) continue;
-                            if (!method.Body.Instructions[i + 1].OpCode.ToString().ToLower().Contains("stloc")) continue;
-                            if (!method.Body.Instructions[i + 2].OpCode.ToString().ToLower().Contains("ldloca")) continue;
+                            try
+                            {
+                                if (instr[i + 3].OpCode != OpCodes.Call || instr[i].OpCode != OpCodes.Newobj || !instr[i].Operand.ToString().Contains("Point::.ctor") || !instr[i + 3].Operand.ToString().Contains("::get_") || !instr[i + 1].OpCode.Name.StartsWith("stloc") || !instr[i + 2].OpCode.Name.StartsWith("ldloca")) continue;
+                            }
+                            catch
+                            {
+                                continue;
+                            }
 
                             int index = i - 1;
                             int index2 = i - 2;
