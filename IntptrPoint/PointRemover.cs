@@ -56,7 +56,7 @@ namespace IntptrPoint
                                 instr[i + 1].OpCode = OpCodes.Nop; // removes stloc
                                 instr[i + 2].OpCode = OpCodes.Nop; // removes ldloca
                                 instr[i + 3].OpCode = OpCodes.Nop; // removes .X
-                                instr[i - 1].OpCode = OpCodes.Nop;
+                                instr[i - 1].OpCode = OpCodes.Nop; // Because looks for .X, we can remove the Y Value shit so only X value remains
 
                             }
                             if (instr[i + 3].Operand.ToString().Contains("::get_Y"))
