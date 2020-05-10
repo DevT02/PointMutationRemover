@@ -95,36 +95,7 @@ namespace IntptrPoint
                                     {
                                         Console.WriteLine(method.Body.Instructions[index].OpCode.ToString());
                                         int held = Convert.ToInt32(method.Body.Instructions[index].OpCode.ToString().Replace("ldc.i4.i", ""));
-                                        switch (held)
-                                        {
-                                            case 0:
-                                                finalvalue = 0;
-                                                break;
-                                            case 1:
-                                                finalvalue = 1;
-                                                break;
-                                            case 2:
-                                                finalvalue = 2;
-                                                break;
-                                            case 3:
-                                                finalvalue = 3;
-                                                break;
-                                            case 4:
-                                                finalvalue = 4;
-                                                break;
-                                            case 5:
-                                                finalvalue = 5;
-                                                break;
-                                            case 6:
-                                                finalvalue = 6;
-                                                break;
-                                            case 7:
-                                                finalvalue = 7;
-                                                break;
-                                            case 8:
-                                                finalvalue = 8;
-                                                break;
-                                        }
+                                        finalvalue = held;
                                     }
                                 }
                                 method.Body.Instructions[i].OpCode = OpCodes.Nop;
@@ -153,36 +124,7 @@ namespace IntptrPoint
                                     {
                                         Console.WriteLine(method.Body.Instructions[index2].OpCode.ToString());
                                         int held = Convert.ToInt32(method.Body.Instructions[index2].OpCode.ToString().Replace("ldc.i4.i", ""));
-                                        switch (held)
-                                        {
-                                            case 0:
-                                                finalvalue = 0;
-                                                break;
-                                            case 1:
-                                                finalvalue = 1;
-                                                break;
-                                            case 2:
-                                                finalvalue = 2;
-                                                break;
-                                            case 3:
-                                                finalvalue = 3;
-                                                break;
-                                            case 4:
-                                                finalvalue = 4;
-                                                break;
-                                            case 5:
-                                                finalvalue = 5;
-                                                break;
-                                            case 6:
-                                                finalvalue = 6;
-                                                break;
-                                            case 7:
-                                                finalvalue = 7;
-                                                break;
-                                            case 8:
-                                                finalvalue = 8;
-                                                break;
-                                        }
+                                        finalvalue = held;
                                     }
                                 }
                                 method.Body.Instructions[i].OpCode = OpCodes.Nop;
