@@ -14,8 +14,9 @@ int test = 123;
 Console.WriteLine(test);
 ```
 
-# WARNINGS
-You might have to re-drag the file into the fixer until it becomes 0. I'm still working on a fix for this.
+# How to use
+Drag and drop exe file protected with point mutations.
+Use de4dot to clean the file, then re-use the point remover.
 
 # Help?
 You could always open an issue and i will happily look into it. Or you could DM me (check my github homepage)
