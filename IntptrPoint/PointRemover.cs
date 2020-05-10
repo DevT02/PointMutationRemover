@@ -19,9 +19,6 @@ namespace IntptrPoint
                 foreach (MethodDef method in types.Methods)
                 {
                     if (!method.HasBody) continue;
-                    int w = 0;
-                    while (w < method.Body.Instructions.Count)
-                    {
                         IList<Instruction> instr = method.Body.Instructions;
                         for (int i = 0; i < instr.Count; i++)
                         {
@@ -74,8 +71,6 @@ namespace IntptrPoint
                             }
                             amount++;
                         }
-                        w++;
-                    }
                 }
 
             }
