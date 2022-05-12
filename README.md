@@ -1,5 +1,5 @@
 # PointMutationRemover
-This remover removes 2d point mutations. It's very basic so there is a slight possibility of it not working with some. Just a warning, BIN/DEBUG is NOT UPDATED by me anymore! Head on over to releases if you really want the new stuff m8
+This remover removes 2d point mutations. It's very basic so there is a slight possibility of it not working with some. Just a warning, BIN/DEBUG is NOT UPDATED by me anymore! Head on over to releases.
 
 # Example of what it does
 **Original Code:**
